@@ -1,7 +1,10 @@
-#chart-area {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+
+.title{
+	margin-left: 8rem;
+}
+
+.rect{
+	color:bisque; 
 }
 
 .container {

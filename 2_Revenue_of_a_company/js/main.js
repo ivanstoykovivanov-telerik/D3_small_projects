@@ -1,8 +1,4 @@
-/*
-*    main.js
-*    Mastering Data Visualization with D3.js
-*    Project 1 - Star Break Coffee
-*/
+
 
 const MARGIN = { LEFT: 100, RIGHT: 10, TOP: 10, BOTTOM: 130 }
 const WIDTH = 600 - MARGIN.LEFT - MARGIN.RIGHT
@@ -32,7 +28,7 @@ g.append("text")
   .attr("font-size", "20px")
   .attr("text-anchor", "middle")
   .attr("transform", "rotate(-90)")
-  .text("Revenue")
+  .text("Revenue ($)")
 
 d3.csv("data/revenues.csv").then(data => {
   data.forEach(d => {
@@ -75,5 +71,5 @@ d3.csv("data/revenues.csv").then(data => {
     .attr("x", (d) => x(d.month))
     .attr("width", x.bandwidth)
     .attr("height", d => HEIGHT - y(d.revenue))
-    .attr("fill", "grey")
+    .attr("fill", "orange")
 })
